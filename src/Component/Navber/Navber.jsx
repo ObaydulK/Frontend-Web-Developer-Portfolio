@@ -1,15 +1,23 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 
 const Navber = () => {
-
     const Navber = <>
         <li><Link to="/"> Project</Link> </li>
         <li><Link to="/help"> Technologies</Link> </li>
         <li><Link to="/duplic"> About me</Link> </li>
     </>
     return (
+
+
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Frontend-Web-Developer-Portfolio</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+
             {/* This is the menu section stard */}
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
@@ -60,7 +68,7 @@ const Navber = () => {
             {/* This is the menu section End */}
             <div className="p-10 text-center ">
                 <img className="mask mask-heart w-10/12 m-16" src="https://daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.jpg" />
-                
+
                 <p className="text-7xl font-bold sm:text-3xl">এই  শালার পুত কি দেখতে আইসিস এখানে।</p>
                 <p>গালি শর্ত প্রযোজ্য </p>
             </div>
